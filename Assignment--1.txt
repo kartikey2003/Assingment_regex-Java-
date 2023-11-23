@@ -1,0 +1,214 @@
+Basic's problum =>>
+
+public class first {
+
+    public static void main(String[] args) {
+
+
+        byte a=1;
+        Short b=12;
+        long c=1111111122;
+        double e=1.22222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222;
+        int f=100;
+        char g='a';
+        boolean h=true;
+        float i=1.2345f;
+
+        System.out.println(a);
+        System.out.println(b);
+        System.out.println(c);
+        System.out.println(e);
+        System.out.println(f);
+        System.out.println(g);
+        System.out.println(h);
+        System.out.println(i);
+
+    }
+}   
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Answer 1=>>
+
+public class main
+{
+	public static void main(String[] args) {
+		int a=56;
+        int b=34;
+        int sum =a+b;
+        System.out.println(sum);
+        
+		
+		
+	}
+}
+
+----------------------------------------------------------------------------------------------------------------------------
+
+Answer 2=>>
+
+
+public class main
+{
+	public static void main(String[] args) {
+		int a=12;
+        int b=56;
+        int c=18;
+        int d=78;
+        int sum=a+b+c+d;
+        System.out.println(sum);
+        
+		
+		
+	}
+}
+
+----------------------------------------------------------------------------------------------------------------------------
+
+Answer 3=>>
+
+
+public class main
+{
+	public static void main(String[] args) {
+	int a=34;
+        int b=9;
+        int sub =a-b;
+        System.out.println(sub);
+        
+		
+		
+	}
+}
+
+----------------------------------------------------------------------------------------------------------------------------
+
+Answer 4=>>
+
+public class main {
+
+    public static void main(String[] args) {
+        int a=45;
+        int b=2;
+        int multi =a*b;
+        System.out.println(multi);
+
+    }
+}
+
+----------------------------------------------------------------------------------------------------------------------------
+
+Answer 5=>>
+
+public class main {
+
+    public static void main(String[] args) {
+        int a=78;
+        int b=3;
+        int div =a/b;
+        System.out.println(div);
+
+    }
+}
+
+-----------------------------------------------------------------------------------------------------------------------
+
+Answer 6=>>
+
+public class first {
+
+    public static void main(String[] args) {
+
+        int a=34;
+        int b=9;
+        int c=2;
+        int d=2;
+        int e=a+(b*c)/d;
+        System.out.println(e);
+    }
+}
+
+--------------------------------------------------------------------------------------------------------------------------
+
+Answer 7=>>
+
+public class first {
+
+    public static void main(String[] args) {
+
+        float a=7.8f;
+        int b=34;
+        int c=2;
+        int d=89;
+        int e=2;
+        float f=a-b*c+(d-e);
+
+        System.out.println(f);
+    }
+}
+
+----------------------------------------------------------------------------------------------------------------------------
+
+Answer 8=>>
+
+public class first {
+
+    public static void main(String[] args) {
+
+        float a=2.3f;
+        float b=4.5f;
+        int c=5;
+        float f=a*b/c;
+
+        System.out.println(f);
+    }
+}
+
+----------------------------------------------------------------------------------------------------------------------------
+
+Answer 9=>>
+
+public class first {
+
+    public static void main(String[] args) {
+
+
+        float a=1.1f;   
+        int b=2;
+        float c=6.7f;
+        float d=1.2f;
+        int e=6;
+        float f=7.8f;
+        int g=2;
+
+
+        float hlo=a*b+c/d*e+(f-g);
+
+        System.out.println(hlo);
+    }
+}
+
+----------------------------------------------------------------------------------------------------------------------------
+
+Answer 10=>>
+
+public class first {
+
+    public static void main(String[] args) {
+
+
+        int a=34;
+        int b=23;
+        int c=12;
+        int d =98;
+
+
+
+        int hlo;
+        hlo=a*b+(c-d);
+
+        System.out.println(hlo);
+    }
+}
+
+============********======================================*******=========================================**********======================
