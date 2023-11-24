@@ -1,0 +1,289 @@
+Answer 1=>>
+
+import java.util.Scanner;
+
+public class first
+{
+	public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+	System.out.println("Enter the number 1 : ");
+	int a = sc.nextInt();
+	
+        System.out.println("Enter the number 2 : ");
+	int b = sc.nextInt();
+
+        int sum = a+b;
+        System.out.println("The sum of a and b is "+sum);
+        
+		
+		
+	}
+}
+
+-----------------------------------------------------------------------------------------------------------
+
+Answer 2=>>
+
+import java.util.Scanner;
+
+public class first
+{
+	public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+	System.out.println("Enter the number 1 : ");
+	int a = sc.nextInt();
+	
+        System.out.println("Enter the number 2 : ");
+	int b = sc.nextInt();
+
+        int sub = a-b;
+        System.out.println("The subtraction of a and b is "+sub);
+        
+		
+		
+	}
+}
+
+---------------------------------------------------------------------------------------------------------------------------------------
+
+Answer 3=>>
+
+import java.util.Scanner;
+
+public class first
+{
+	public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+	System.out.println("Enter the number 1 : ");
+	int a = sc.nextInt();
+	
+        System.out.println("Enter the number 2 : ");
+	int b = sc.nextInt();
+
+        int mul = a*b;
+        System.out.println("The multiplication of a and b is "+mul);
+        
+		
+		
+	}
+}
+
+--------------------------------------------------------------------------------------------------------------------------------------
+
+Answer 4=>>
+
+import java.util.Scanner;
+
+public class first
+{
+	public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+	System.out.println("Enter the number 1 : ");
+	int a = sc.nextInt();
+	
+        System.out.println("Enter the number 2 : ");
+	int b = sc.nextInt();
+
+        int div = a/b;
+        System.out.println("The division of a and b is " + div);
+        
+		
+		
+	}
+}
+
+----------------------------------------------------------------------------------------------------------------------------
+
+Answer 5=>>
+
+import java.util.Scanner;
+
+public class first
+{
+	public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+	System.out.println("Enter the number 1 : ");
+	int a = sc.nextInt();
+	
+        System.out.println("Enter the number 2 : ");
+	int b = sc.nextInt();
+
+	System.out.println("Enter the number 3 : ");
+	int c = sc.nextInt();
+
+	System.out.println(" Enter the number 4 :");
+	int d = sc.nextInt();
+ 
+   	     int e=a+(b*c)/d;
+         System.out.println("The opration on a and b and c and d is " + e);
+        
+		
+		
+	}
+}
+
+---------------------------------------------------------------------------------------------------------
+
+Answer 6=>>
+
+import java.util.Scanner;
+
+public class first {
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+
+		System.out.println("Enter the number 1 : ");
+		float a = sc.nextFloat();
+
+		System.out.println("Enter the number 2 : ");
+		int b = sc.nextInt();
+
+		System.out.println("Enter the number 3 : ");
+		int c = sc.nextInt();
+
+		System.out.println(" Enter the number 4 :");
+		int d = sc.nextInt();
+
+		System.out.println("Enter the number 5 :");
+		int e = sc.nextInt();
+
+ 
+		float f = a - b * c + (d - e);
+		System.out.println("The opration on a and b and c and d and e is " + f);
+
+	}
+}
+
+---------------------------------------------------------------------------------------------------------------
+
+Answer 7 =>>
+
+import java.util.Scanner;
+
+public class first {
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+
+		System.out.println("Enter the number 1 : ");
+		float a = sc.nextFloat();
+
+		System.out.println("Enter the number 2 : ");
+		float b = sc.nextFloat();
+
+		System.out.println("Enter the number 3 : ");
+		int c = sc.nextInt();
+
+ 
+		float e = a*b/c;
+		System.out.println("The opration on a and b and c  is " + e);
+
+	}
+}
+
+---------------------------------------------------------------------------------------------------------------------------
+
+Answer 8=>>
+
+import java.util.Scanner;
+
+public class first {
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+
+		System.out.println("Enter the number 1 : ");
+		float a = sc.nextFloat();
+
+		System.out.println("Enter the number 2 : ");
+		int b = sc.nextInt();
+
+		System.out.println("Enter the number 3 : ");
+		float c = sc.nextFloat();
+
+		System.out.println("Enter the number 4 :");
+		float d = sc.nextFloat();
+
+		System.out.println("Enter the number 5 :");
+		int e = sc.nextInt();
+
+		System.out.println("Enter the number 6 :");
+		float f = sc.nextFloat();
+
+		System.out.println("Enter the number 7 :");
+		int g = sc.nextInt();
+
+ 
+		float hlo=a*b+c/d*e+(f-g);
+		System.out.println("The opration on a and b and c  is " + hlo);
+
+	}
+}
+
+----------------------------------------------------------------------------------------------------------------------------
+
+Answer 9=>>
+
+import java.util.Scanner;
+
+public class first {
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+
+		System.out.println("Enter the number 1 : ");
+		int a = sc.nextInt(); 
+
+		System.out.println("Enter the number 2 : ");
+		int b = sc.nextInt();
+
+		System.out.println("Enter the number 3 : ");
+		int c =  sc.nextInt();
+
+		System.out.println("Enter the number 4 :");
+		int d = sc.nextInt(); 
+
+
+ 
+		int hlo=a*b+(c-d);
+		System.out.println("The opration on a and b and c  is " + hlo);
+
+	}
+}
+
+----------------------------------------------------------------------------------------------------
+
+Answer 10=>>
+
+import java.util.Scanner;
+
+public class first {
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+
+		System.out.println("Enter the number 1 : ");
+		int a = sc.nextInt(); 
+
+		System.out.println("Enter the number 2 : ");
+		int b = sc.nextInt();
+
+		System.out.println("Enter the number 3 : ");
+		int c =  sc.nextInt();
+
+		System.out.println("Enter the number 4 :");
+		int d = sc.nextInt(); 
+
+
+ 
+		int hlo = a+b+c+d;
+		System.out.println("The opration on a and b and c  is " + hlo);
+
+	}
+}
+
+------------------------------------------------------------------------------------------------------------------------
+
+
+
