@@ -1,0 +1,577 @@
+Amswer 1=>>
+
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+
+		System.out.println("Enter the no. : ");
+		int a = sc.nextInt();
+
+		if (a%4==0 && a%100!=0 || a%400==0) {
+			System.out.println("leep year ");
+		} 
+		else{
+			System.out.println("invalid...");
+
+		}
+	}
+
+}
+
+------------------------------------------------------------------------------------------------------------------------------
+
+Answer 2=>>
+
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+
+		System.out.println("Enter which converter u want press f if uwant c to f and press c to f---c : ");
+		char a = sc.next().charAt(0);
+
+		if(a=='f'){
+			//c---------->f
+			System.out.println("enter the temp in Fahrenheit");
+			int fa = sc.nextInt();
+
+			float c;
+			c = (32*fa - 32)*(5/9);
+
+			System.out.println(" the temp in celsius is " + c);
+
+		}else if (a=='c'){
+			//f---------->c
+
+			System.out.println("enter the temp in Celsius");
+			int ce = sc.nextInt();
+
+			float f;
+			f = (9/5 * ce) + 32;
+
+			System.out.println("enter the temp in fahrenheit" + f);
+
+
+		}
+	}
+
+}
+
+----------------------------------------------------------------------------------------------------------------
+
+Answer 3=>>
+
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+
+		System.out.println("Enter which process do u want area or volume : ");
+		char a = sc.next().charAt(0);
+
+		if (a == 'A' || a == 'a') {
+			System.out.println(" Kon sii shape ka chihye area.. (Area of circle , tringle , square)");
+			String A = sc.next();
+
+			if (A.equals("circle")) {
+				System.out.println(" enter the radius of circle");
+				int r = sc.nextInt();
+				double AC;
+				AC = 3.14 * r * r;
+
+				System.out.println(" the area of circle with radius = " + r + " is " + AC);
+
+			} else if (A.equals("tringle")) {
+				System.out.println("enter the base of tringle...");
+				int b = sc.nextInt();
+
+				System.out.println("enter the height of tringle...");
+				int h = sc.nextInt();
+
+				double AT;
+				AT = 0.5 * b * h;
+
+				System.out.println(" the area of tringle is " + AT);
+			} else if (A.equals("square")) {
+				System.out.println("enter the side of square");
+				int s = sc.nextInt();
+
+				int AS;
+				AS = s * s;
+
+				System.out.println(" the area of square is " + AS);
+			}
+
+		} else if (a == 'V' || a == 'v') {
+			System.out.println(" Kon sii shape ka chihye volume.. (volume of cube , cuboid , Cone)");
+			String V = sc.next();
+
+			if (V.equals("cube")) {
+				System.out.println(" enter the side of cube");
+				int s = sc.nextInt();
+
+				int VCube;
+				VCube = s * s * s;
+
+				System.out.println("the volume of cube is " + VCube);
+
+			} else if (V.equals("cuboid")) {
+				System.out.println("enter the base of tringle...");
+				int b = sc.nextInt();
+
+				System.out.println("enter the height of tringle...");
+				int h = sc.nextInt();
+
+				System.out.println("enter the length of cuboid...");
+				int l = sc.nextInt();
+
+				double Vcuboy;
+				Vcuboy = l * b * h;
+
+				System.out.println("the volume is " + Vcuboy);
+			} else if (V.equals("cone")) {
+
+				System.out.println("enter the height of tringle...");
+				int h = sc.nextInt();
+
+				System.out.println(" enter the radius of circle");
+				int r = sc.nextInt();
+
+				double Vcone;
+				Vcone = 0.33 * h * r;
+
+				System.out.println(" the volume is " + Vcone);
+
+			}
+
+		}
+
+	}
+}
+
+----------------------------------------------------------------------------------------------------------------------
+
+Answer 4==>
+
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+
+		System.out.println("Enter the masks of 5 subjects : ");
+	
+ 
+      System.out.println("Maths : ");
+       int m = sc.nextInt();
+       
+       System.out.println("physics : ");
+       int p = sc.nextInt();
+
+	   System.out.println("chemistry : ");
+       int c = sc.nextInt();
+
+	   System.out.println("hindi : ");
+       int h = sc.nextInt();
+
+	   System.out.println("Sanskrit : ");
+       int s = sc.nextInt();
+
+       float per;
+       per =((m+p+c+s+h)*100)/500;
+       
+       
+       if(per<=25){
+              System.out.println("your grade is F");
+       
+       }else if (per>25 && per<45){
+              System.out.println("your grade is E");
+       }else if (per>45 && per<50){
+              System.out.println("your grade is D");
+       }else if (per>50 && per<60){
+              System.out.println("your grade is C");
+       }else if (per>60 && per<80){
+              System.out.println("your grade is B");
+       }else if (per>80){
+              System.out.println("your grade is A");
+       }else {
+              System.out.println("u are FAIL.......");
+       }
+}
+}
+
+--------------------------------------------------------------------------------------------------------
+
+Answer 5=>>
+
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+
+      System.out.println("ur heignt in cm : ");
+       int m = sc.nextInt();
+      
+       float per;
+       per = m/100;
+  
+       if(per>1 && per<5){
+              System.out.println("low");
+       
+       }else if (per>5 && per<10){
+              System.out.println("mid ");
+       }else if (per>10) {
+		System.out.println("high");
+	   }
+}
+}
+
+--------------------------------------------------------------------------------------------
+
+Answer 6=>>
+
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String[] args) {
+		
+
+		Scanner sc = new Scanner(System.in);
+
+		System.out.println("Enter the roll no. of student..");
+		int roll = sc.nextInt();
+
+		System.out.println("enter the student name ");
+		String name = sc.next();
+
+		System.out.println("enter the father's name ");
+		String fname = sc.next();
+
+		System.out.println("enter the address ");
+		String address = sc.next();
+
+		System.out.println("Enter ur contact no.");
+		long num = sc.nextLong();
+
+		System.out.println("Maths : ");
+       int m = sc.nextInt();
+       
+       System.out.println("physics : ");
+       int p = sc.nextInt();
+
+	   System.out.println("chemistry : ");
+       int c = sc.nextInt();
+
+	   int total = m+p+c;
+	   System.out.println("the total is " + total);
+
+	   float per;
+       per =((m+p+c)*100)/300;
+       System.out.println(" the persentage is " + per);
+
+	   if(per<=25){
+              System.out.println("your division is F");
+       
+       }else if (per>=25 && per<45){
+              System.out.println("your division is E");
+       }else if (per>=45 && per<50){
+              System.out.println("your division is D");
+       }else if (per>=50 && per<60){
+              System.out.println("your division is C");
+       }else if (per>=60 && per<80){
+              System.out.println("your division is B");
+       }else if (per>=80){
+              System.out.println("your division is A");
+       }else if (per<25) {
+              System.out.println("u are FAIL.......");
+       }
+
+}
+	   
+}
+
+---------------------------------------------------------------------------------------------------------------------------------
+
+Answeer 8-->
+
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String[] args) {
+		
+
+		Scanner sc = new Scanner(System.in);
+
+  System.out.println("number 1 = ");
+  int m = sc.nextInt();
+  if(m>40){
+  System.out.println("number 2 = ");
+  int p = sc.nextInt();
+if(p>40){
+  System.out.println("number 3 = ");
+  int c = sc.nextInt();
+if(c>40){
+  System.out.println("number 4 = ");
+  int s = sc.nextInt();
+ if(s>40){ 
+  System.out.println("number 5 = ");
+  int h = sc.nextInt();
+  if(h>40){
+         int Avg = (m+p+c+s+h)/5;
+       
+       if(Avg>45 && Avg<50){
+              System.out.println("Your grade is D\n");
+       }else if (Avg>=50 && Avg<60){
+              System.out.println("your grade is C\n");
+       }else if(Avg>=60 && Avg<80){
+              System.out.println("your grade is B");
+       }else if(Avg>=80){
+              System.out.println("your grade is A");
+       }else {
+              System.out.println("u are FAIL.....");
+       }
+  }else{
+       System.out.println("u are fail......");
+}
+}else{
+    System.out.println("u are fail......");
+}
+}else{
+    System.out.println("u are FAIL.....");
+}
+}else{
+    System.out.println("u are FAIL.....");
+}
+}else{
+    System.out.println("u are FAIL.....");
+}
+}
+}
+
+----------------------------------------------------------------------------------------------------
+
+Answer 9 =>>
+
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String[] args) {
+
+		int a = 200;
+		int b = 80;
+		int c = 60;
+
+		if(a>b && a>c){
+			System.out.println("a is max");
+		}else {
+		if(b>c && b>a){
+			System.out.println(" b is max");
+		}else{
+			System.out.println(" c is max");
+	}
+		}
+	}
+}
+		
+
+-----------------------------------------------------------------------------------------------------------------
+
+Answer 10=>>
+
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String[] args) {
+		
+
+		Scanner sc = new Scanner(System.in);
+
+
+    System.out.println("What is ur sallary? ");
+    int sall = sc.nextInt();
+     
+     System.out.println("How many holiday's u taken in this month? ");
+     int holi = sc.nextInt();
+     if(holi == 1){
+            System.out.println("kartikry sharma");
+            System.out.println("A-12A arya nagar, murlipura, jaipur");
+            System.out.println("SBI(murlipura branch)");
+            System.out.println("ur salary is " + sall);
+            System.out.println("the salary aloted to kartikey is " + sall);
+            System.out.println("your total holiday's = " + holi);
+            
+     }else if (holi == 2 || holi == 3 || holi == 4 || holi == 5){
+            System.out.println("kartikry sharma");
+            System.out.println("A-12A arya nagar, murlipura, jaipur");
+            System.out.println("SBI(murlipura branch)");
+            System.out.println("ur salary is " + sall);
+            double A_sall;
+            A_sall = ((5.0)/(100.0))*sall;
+            System.out.println("the salary aloted to kartikey is " + A_sall);
+            System.out.println("your total holiday's = " + holi);
+     }else if (holi>5 && holi<14){
+            System.out.println("kartikry sharma");
+            System.out.println("A-12A arya nagar, murlipura, jaipur");
+            System.out.println("SBI(murlipura branch)");
+            System.out.println("ur salary is " + sall);
+            double A_sall; 
+            A_sall = ((10.0)/(100.0))*sall;
+            System.out.println("the salary aloted to kartikey is " + A_sall);
+            System.out.println("your total holiday's = " + holi);
+     }else if (holi>=15){
+            System.out.println("kartikry sharma");
+            System.out.println("A-12A arya nagar, murlipura, jaipur");
+            System.out.println("SBI(murlipura branch)");
+            System.out.println("ur salary is " + sall);
+            double A_sall;
+            A_sall = ((50.0)/(100.0))*sall;
+            System.out.println("the salary aloted to kartikey is " + A_sall);
+            System.out.println("your total holiday's = " + holi);
+     }
+	}
+}
+		
+----------------------------------------------------------------------------------------------------------------------------
+
+Answer 11=>>
+
+
+import java.util.Scanner;
+
+public class Main {
+       public static void main(String[] args) {
+
+              Scanner sc = new Scanner(System.in);
+
+              System.out.println("What is ur electricity unit... ");
+              int unit = sc.nextInt();
+
+              int moye = unit * 10;
+               
+
+              if (moye > 1 && moye < 10) {
+                     int disc;
+                     disc = (moye * 10) / 100;
+
+                     System.out.println("kartikey sharma");
+                     System.out.println("the unit is " + unit);
+                     System.out.println("the ammount is this unit" + moye);
+                     System.out.println("the discount is 10% ");
+                     System.out.println("total ammount pay  is " + disc);
+
+              } else if (moye > 11 && moye < 20) {
+                     int disc2;
+                     disc2 = (moye * 15) / 100;
+
+                     System.out.println("kartikey sharma");
+                     System.out.println("the unit is " + unit);
+                     System.out.println("the ammount is this unit" + moye);
+                     System.out.println("the discount is 10% ");
+                     System.out.println("total ammount pay  is " + disc2);
+              } else if (moye > 21 && moye < 40) {
+                     int disc3;
+                     disc3 = (moye * 30) / 100;
+
+                     System.out.println("kartikey sharma");
+                     System.out.println("the unit is " + unit);
+                     System.out.println("the ammount is this unit" + moye);
+                     System.out.println("the discount is 10% ");
+                     System.out.println("total ammount pay  is " + disc3);
+              } else if (moye > 41) {
+                     int disc4;
+                     disc4 = (moye * 50) / 100;
+
+                     System.out.println("kartikey sharma");
+                     System.out.println("the unit is " + unit);
+                     System.out.println("the ammount is this unit" + moye);
+                     System.out.println("the discount is 10% ");
+                     System.out.println("total ammount pay  is " + disc4);
+              }
+
+       }
+}
+
+---------------------------------------------------------------------------------------------------------------------------
+
+Answer 12=>>
+
+import java.util.Scanner;
+
+public class Main {
+       public static void main(String[] args) {
+
+              Scanner sc = new Scanner(System.in);
+
+              System.out.println("tu kon h... ");
+              String how = sc.next();
+
+              if (how.equals("retailer")) {
+                     int peices = sc.nextInt();
+                     if (peices > 1 && peices < 15) {
+                            int disc = (peices * 15) / 100;
+
+                            System.out.println("kartikey sharma ");
+                            System.out.println("the peices is " + peices);
+                            System.out.println("the discount is " + disc);
+
+                     } else if (peices >= 16 && peices < 30) {
+                            int disc2 = (peices * 30) / 100;
+
+                            System.out.println("kartikey sharma ");
+                            System.out.println("the peices is " + peices);
+                            System.out.println("the discount is " + disc2);
+
+                     } else if (peices >= 31 && peices < 50) {
+                            int disc3 = (peices * 50) / 100;
+
+                            System.out.println("kartikey sharma ");
+                            System.out.println("the peices is " + peices);
+                            System.out.println("the discount is " + disc3);
+
+                     }
+              } else if (how.equals("customer")) {
+                     System.out.println("what is ur ammount");
+                     int billA = sc.nextInt();
+
+                     if (billA > 1000 && billA < 2000) {
+                            int disco = billA * (10 / 100);
+
+                            System.out.println("kartikey sharma");
+                            System.out.println("contact number = 9460861441");
+                            System.out.println("the payment is " + billA);
+                            System.out.println("the discount is 10% ");
+                            System.out.println("total payment is " + disco);
+
+                     } else if (billA > 2001 && billA < 3000) {
+                            int disco1 = billA * (15 / 100);
+
+                            System.out.println("kartikey sharma");
+                            System.out.println("contact number = 9460861441");
+                            System.out.println("the payment is " + billA);
+                            System.out.println("the discount is 10% ");
+                            System.out.println("total payment is " + disco1);
+
+                     } else if (billA > 3000) {
+                            int disco2 = (billA * 30) / 100;
+
+                            System.out.println("kartikey sharma");
+                            System.out.println("contact number = 9460861441");
+                            System.out.println("the payment is " + billA);
+                            System.out.println("the discount is 10% ");
+                            System.out.println("total payment is " + disco2);
+
+                     }
+              }
+
+       }
+}
