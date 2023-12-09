@@ -1,0 +1,174 @@
+Answer 6) =>>
+
+import java.util.*;
+
+public class Main {
+
+   public static void main(String[] args) {
+
+      Scanner sc = new Scanner(System.in);
+
+      System.out.println("Entre the no. of student's placed in CSE : ");
+      int a = sc.nextInt();
+
+      System.out.println("Enter the no. of student's placed in ECE : ");
+      int b = sc.nextInt();
+
+      System.out.println("Enter the no. of student's placed in ME :");
+      int c = sc.nextInt();
+
+      if (a > 0 || b > 0 || c > 0) {
+
+         if (a > b && a > c) {
+            System.out.println("Highest Placement ");
+            System.out.print("CSE");
+         } else if (a == 0 && b == 0 && c == 0) {
+            System.out.println("None of the department has got the highest palcement!!");
+         } else if (a == b) {
+            System.out.println("Highest Placcement : ");
+            System.out.println("CSE ");
+            System.out.println("ECE");
+         } else if (a == c) {
+            System.out.println("Highest Placcement : ");
+            System.out.println("CSE ");
+            System.out.println("ME");
+         } else if (b > a && b > c) {
+            System.out.println("Highest placement : ");
+            System.out.print("ECE");
+
+         } else if (b == a) {
+            System.out.println("Highest Placcement : ");
+            System.out.println("ECE ");
+            System.out.println("CSE");
+         } else if (b == c) {
+            System.out.println("Highest Placcement : ");
+            System.out.println("ECE ");
+            System.out.println("ME");
+         } else {
+            System.out.println("Highest placement : ");
+            System.out.print("ME");
+         }
+      } else {
+         System.out.println("Invalid input...");
+      }
+
+   }
+}
+
+----------------------------------------------------------------------------------------------------------------
+
+Answer 7) =>
+
+import java.util.*;
+
+public class Main {
+
+   void MagicBords() {
+      Scanner sc = new Scanner(System.in);
+
+      System.out.println("Enter the number1 :");
+      int[] a = new int[4];
+
+      for (int i = 0; i < 4; i++) {
+         a[i] = sc.nextInt();
+      }
+
+      for (int b : a) {
+         char c = (char) b;
+         System.out.println(b + "-" + c);
+      }
+
+   }
+
+   public static void main(String[] args) {
+
+      Main k = new Main();
+      k.MagicBords();
+
+   }
+}
+
+----------------------------------------------------------------------------------------------------
+
+Answer 8)=>
+
+import java.util.*;
+
+public class Main {
+
+   void Bill() {
+      Scanner sc = new Scanner(System.in);
+
+      System.out.println("Enter the no. of Pizzas buoght :");
+      int a = sc.nextInt();
+
+      System.out.println("Enter the no. of Puffs buoght :");
+      int b = sc.nextInt();
+
+      System.out.println("Enter the no. of Cold drinks buoght :");
+      int c = sc.nextInt();
+
+      int Pizza_price = a * 100;
+      int Puffs_price = b * 20;
+      int Cold_drinks_price = c * 10;
+
+      int total = (Pizza_price + Puffs_price + Cold_drinks_price);
+
+      System.out.println("No. of Pizzas : " + a);
+      System.out.println("No. of Puffs : " + b);
+      System.out.println("No. of Cold-Drinks : " + c);
+      System.out.println(" Total Price = " + total);
+      System.out.println("ENJOY THE SHOW!!");
+
+   }
+
+   public static void main(String[] args) {
+
+      Main k = new Main();
+      k.Bill();
+
+   }
+}
+-------------------------------------------------------------------------------------------------------
+
+Aanswer 10=>>
+
+import java.util.*;
+
+public class Main {
+
+   void Bill() {
+      Scanner sc = new Scanner(System.in);
+
+      System.out.println("Enter the Quantity of diesel filled up :");
+      int a = sc.nextInt();
+
+      System.out.println("Enter the distence covered till the tank got dry :");
+      int b = sc.nextInt();
+
+      float k = a * 100;
+      float f = k / b;
+
+      System.out.println("Liters / 100KM");
+      System.out.printf("%.2f", f);
+      System.out.println(" ");
+
+      double g = a * 0.2642;
+      double m = b * 0.6214;
+      double t = m / g;
+
+      System.out.println("Miles / gallons");
+      System.out.printf("%.2f", t);
+
+   }
+
+   public static void main(String[] args) {
+
+      Main k = new Main();
+      k.Bill();
+
+   }
+}
+
+===============///=======================****===============================================---===============================///==***==--
+
