@@ -1,0 +1,485 @@
+Answer 1=>>
+
+public class Main {
+   public static void main(String[] args) {
+      
+      int a = 1;
+      while (a<101) {
+         System.out.println(a);
+         a++;
+      }
+   }
+}
+
+------------------------------------------------------------------------------------------------------
+
+Answer 2=>>
+
+public class Main {
+   public static void main(String[] args) {
+      
+      int a = 100;
+      while (a>0) {
+         System.out.println(a);
+         a--;
+      }
+   }
+}
+
+-------------------------------------------------------------------------------------------------------------
+
+Answer 3=>>
+
+public class Main {
+   public static void main(String[] args) {
+      
+      int a = 100;
+      while (a>0) {
+         if (a%2==0) {
+            System.out.println(a);
+         } 
+         a--;
+      }
+   }
+}
+
+----------------------------------------------------------------------------------------------------------------
+
+Answer 4=>>
+
+public class Main {
+   public static void main(String[] args) {
+      
+      int a = 1;
+      while (a<101) {
+         if (a%2==0) {
+            System.out.println(a);
+         } 
+         a++;
+      }
+   }
+}
+
+---------------------------------------------------------------------------------------------------------------------
+
+Answer 5=>>
+
+public class Main {
+   public static void main(String[] args) {
+      
+      int a = 1;
+      while (a<101) {
+         if (a%2!=0) {
+            System.out.println(a);
+         } 
+         a++;
+      }
+   }
+}
+
+-----------------------------------------------------------------------------------------------------------
+
+Answer 6=>>
+
+public class Main {
+   public static void main(String[] args) {
+
+      int a = 50;
+      while (a < 501) {
+         System.out.println(a);
+         a++;
+      }
+   }
+}
+
+----------------------------------------------------------------------------------------------------------
+
+Answer 7=>>
+
+public class Main {
+   public static void main(String[] args) {
+
+      int a = 500;
+      while (a > 50) {
+         System.out.println(a);
+         a--;
+      }
+   }
+}
+
+------------------------------------------------------------------------------------------------------------
+
+Answer 8=>>
+
+public class Main {
+   public static void main(String[] args) {
+
+      int a = 50;
+      while (a < 1001) {
+         if (a%2==0) {
+           System.out.println(a);  
+         }
+         a++;
+      }
+   }
+}
+
+------------------------------------------------------------------------------------------------------------
+
+Answer 9=>>
+
+import java.util.Scanner;
+
+public class Main {
+   public static void main(String[] args) {
+      Scanner sc = new Scanner(System.in);
+
+      System.out.println("starting point...");
+      int a = sc.nextInt();
+
+      System.out.println("Ending point...");
+      int b = sc.nextInt();
+
+      while (a <= b) {
+
+         System.out.println(a);
+
+         a++;
+      }
+   }
+}
+
+-------------------------------------------------------------------------------------------------------------
+
+Answer 10=>>
+
+import java.util.Scanner;
+
+public class Main {
+   public static void main(String[] args) {
+      Scanner sc = new Scanner(System.in);
+
+      System.out.println("starting point...");
+      int a = sc.nextInt();
+
+      System.out.println("Ending point...");
+      int b = sc.nextInt();
+
+      while (a <= b) {
+          
+         if (a%2==0) {
+         System.out.println(a);   
+         }
+         
+
+         a++;
+      }
+   }
+}
+
+------------------------------------------------------------------------------------------------------------------------------
+
+Answer 11=>>
+
+import java.util.Scanner;
+
+public class Main {
+   public static void main(String[] args) {
+      Scanner sc = new Scanner(System.in);
+
+      System.out.println("starting point...");
+      int a = sc.nextInt();
+
+      System.out.println("Ending point...");
+      int b = sc.nextInt();
+
+      while (a <= b) {
+          
+         if (a%2!=0) {
+         System.out.println(a);   
+         }
+         
+
+         a++;
+      }
+   }
+}
+
+--------------------------------------------------------------------------------------------------------
+Answer 12=>>
+
+import java.util.Scanner;
+
+public class Main {
+   public static void main(String[] args) {
+      Scanner sc = new Scanner(System.in);
+
+      int sum = 0;
+      int a = 1;
+
+      while (a <= 100) {
+
+         System.out.println(a);
+
+         sum += a;
+         a++;
+
+      }
+      System.out.println("the sum is " + sum);
+   }
+}
+
+
+------------------------------------------------------------------------------------------------------
+Answer 13=>>
+
+import java.util.Scanner;
+
+public class Main {
+   public static void main(String[] args) {
+      Scanner sc = new Scanner(System.in);
+
+      System.out.println("enter the number whoes table u want...");
+      int a = 1;
+      
+
+      while (a <= 10) {
+
+         System.out.println("2" + " x " + a + " = " + a * 2);
+         a++;
+      }
+   }
+}
+
+-----------------------------------------
+
+Answerr 14=>>
+
+import java.util.Scanner;
+
+public class Main {
+   public static void main(String[] args) {
+      Scanner sc = new Scanner(System.in);
+
+      System.out.println("enter the number whoes table u want...");
+      int a = 1;
+      int b = sc.nextInt();
+
+      while (a <= 10) {
+
+         System.out.println(b + " x " + a + " = " + a * b);
+         a++;
+      }
+   }
+}
+
+--------------------------------------------------------------------------------------------------------------------------
+
+Answer 15=>>
+
+import java.util.Scanner;
+
+public class Main {
+   public static void main(String[] args) {
+      Scanner sc = new Scanner(System.in);
+
+      System.out.println("enter the number whoes table u want...");
+      int a = sc.nextInt();
+      System.out.println("Enter the number where table end's...");
+      int b = sc.nextInt();
+      
+
+      while (a <= b) {
+
+         System.out.printf(" Tabel for %d: \n", a);
+          
+         int c = 1;
+         while (c <=10 ) {
+            System.out.printf("%d *%d = %d \n", a , c , a*c );
+            c++;
+         }
+         a++;
+      }
+   }
+}
+
+----------------------------------------------------------------------------------------------------------------------------
+
+Answer 16=>>
+
+import java.util.Scanner;
+
+public class Main {
+   public static void main(String[] args) {
+      Scanner sc = new Scanner(System.in);
+
+    int a = 1;
+    
+    while (a<=100) {
+      if (a%3==0 && a%7==0) {
+         System.out.println(a);
+     
+      }
+       a++;
+      
+    }
+   }
+}
+
+----------------------------------------------------------------------------------------------------------------------------
+
+Answer 17=>>
+
+import java.util.Scanner;
+
+public class Main {
+   public static void main(String[] args) {
+      Scanner sc = new Scanner(System.in);
+
+    int a = 1;
+    
+    while (a<=100) {
+      if (a%5==0 && a%11==0) {
+         System.out.println(a);
+     
+      }
+       a++;
+      
+    }
+   }
+}
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+Answer 18=>>
+
+import java.util.Scanner;
+
+public class Main {
+   public static void main(String[] args) {
+      Scanner sc = new Scanner(System.in);
+
+    int a = 100;
+    
+    while (a>=1) {
+      if (a%5==0 && a%11==0) {
+         System.out.println(a);
+     
+      }
+       a--;
+      
+    }
+   }
+}
+
+-------------------------------------------------------------------------------------------------------------
+
+Answer 19=>>
+
+import java.util.Scanner;
+
+public class Main {
+   public static void main(String[] args) {
+      Scanner sc = new Scanner(System.in);
+
+      int a = 10;
+
+      while (a >= 1) {
+
+         System.out.println("2" + " x " + a + " = " + a * 2);
+         a--;
+      }
+   }
+}
+
+-------------------------------------------------------------------------------------------------------------
+
+Answer 20=>>
+
+import java.util.Scanner;
+
+public class Main {
+   public static void main(String[] args) {
+      Scanner sc = new Scanner(System.in);
+
+      System.out.println("divisible by no 1 = ");
+      int i = sc.nextInt();
+
+      System.out.println("divisible by no 2 = ");
+      int j = sc.nextInt();
+
+      int a = 100;
+
+      while (a >= 1) {
+
+         if (a % i == 0 & a % j == 0) {
+            System.out.println(a);
+         }
+         a--;
+      }
+   }
+}
+
+-------------------------------------------------------------------------------------------------------------
+
+Answer 21=>>
+
+REFFER QUESTION NO. 14 !!!!
+
+-------------------------------------------------------------------------------------------------------------
+
+Answer 22=>>
+
+import java.util.Scanner;
+
+public class Main {
+   public static void main(String[] args) {
+      Scanner sc = new Scanner(System.in);
+
+      int sum = 0;
+      int a = 1;
+
+      while (a <= 100) {
+
+         if (a % 2 == 0) {
+            System.out.println(a);
+
+            sum += a;
+         }
+
+         a++;
+
+      }
+      System.out.println("the sum is " + sum);
+   }
+}
+
+----------------------------------------------------------------------------------------------------------
+
+Answer 23=>>
+
+import java.util.Scanner;
+
+public class Main {
+   public static void main(String[] args) {
+      Scanner sc = new Scanner(System.in);
+
+      int sum = 0;
+      int a = 1;
+
+      while (a <= 100) {
+
+         if (a % 2 != 0) {
+            System.out.println(a);
+
+            sum += a;
+         }
+
+         a++;
+
+      }
+      System.out.println("the sum is " + sum);
+   }
+}
+
+======================*******=====================////////////==============----------------=======================///////////===*****====
