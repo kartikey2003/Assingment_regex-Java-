@@ -1,0 +1,21 @@
+public class Main {
+   public static void main(String[] args) {
+      Integer a = 78;
+      float b = 1.2f;
+      char c = 'a';
+      byte e = 4;
+      double f = 2.3123123;
+      long g = 231231;
+      boolean h = true;
+
+      System.out.println(a);
+      System.out.println(b);
+      System.out.println(c);
+      System.out.println(e);
+      System.out.println(f);
+      System.out.println(g);
+      System.out.println(h);
+
+      
+   }
+}
