@@ -1,0 +1,539 @@
+Answer 1=>>
+
+import java.util.*;
+
+
+class a{
+        a(){
+                Scanner sc = new Scanner(System.in);
+
+                int a = sc.nextInt();
+                int b = sc.nextInt();
+
+                int c = a + b ;
+
+                System.out.println("the sum of " + a + " and " + b + " = " + c );
+        }
+}
+public class Main {
+
+
+
+ public static void main(String[] args) {
+
+      Scanner hlo = new Scanner(System.in);
+
+       new a();
+
+   }
+}
+
+----------------------------------------------------------------------------------------------------------
+
+Answer 2=>>
+
+import java.util.*;
+
+class a {
+        a() {
+                Scanner sc = new Scanner(System.in);
+                System.out.println("Enter the number1 and number2 => ");
+                int a = sc.nextInt();
+                int b = sc.nextInt();
+
+                int c = a / b;
+
+                System.out.println("the division of " + a + " and " + b + " = " + c);
+        }
+}
+
+public class Main {
+
+        public static void main(String[] args) {
+
+                new a();
+
+        }
+}
+
+-------------------------------------------------------------------------------------------------------------------------
+
+Answer 3=>>
+
+import java.util.*;
+
+class a {
+        a() {
+                Scanner sc = new Scanner(System.in);
+                System.out.println("Enter the number1 and number2 => ");
+                int a = sc.nextInt();
+                int b = sc.nextInt();
+
+                int c = a - b;
+
+                System.out.println("the subtraction of " + a + " and " + b + " = " + c);
+        }
+}
+
+public class Main {
+
+        public static void main(String[] args) {
+
+                new a();
+
+        }
+}
+
+--------------------------------------------------------------------------------------------------------------
+
+Answer 4=>>
+
+import java.util.*;
+
+class a {
+        a() {
+                Scanner sc = new Scanner(System.in);
+                System.out.println("Enter the number1 and number2 => ");
+                int a = sc.nextInt();
+                int b = sc.nextInt();
+
+                int c = a * b;
+
+                System.out.println("the multiplication of " + a + " and " + b + " = " + c);
+        }
+}
+
+public class Main {
+
+        public static void main(String[] args) {
+
+                new a();
+
+        }
+}
+
+-------------------------------------------------------------------------------------------------------------------------
+
+Answer 5=>>
+
+import java.util.*;
+
+public class Main {
+
+        Main() {
+
+                Scanner sc = new Scanner(System.in);
+                System.out.println("Enter the number1 and number2 => ");
+                int a = sc.nextInt();
+                int b = sc.nextInt();
+
+                int c = a + b;
+
+                System.out.println("the SUM of " + a + " and " + b + " = " + c);
+
+        }
+
+        public static void main(String[] args) {
+
+                new Main();
+
+        }
+}
+
+-----------------------------------------------------------------------------------------------------------
+
+Answer 6=>>
+
+import java.util.*;
+
+class a {
+        a() {
+                Scanner sc = new Scanner(System.in);
+                System.out.println("Enter the number1 and number2 => ");
+                int a = sc.nextInt();
+                int b = sc.nextInt();
+
+                int c = a + b;
+
+                System.out.println("the Sum of " + a + " and " + b + " = " + c);
+        }
+}
+
+class b {
+        b() {
+                Scanner sc = new Scanner(System.in);
+                System.out.println("Enter the number1 and number2 => ");
+                int a = sc.nextInt();
+                int b = sc.nextInt();
+
+                int c = a / b;
+
+                System.out.println("the division of " + a + " and " + b + " = " + c);
+        }
+
+}
+
+class c {
+        c() {
+                Scanner sc = new Scanner(System.in);
+                System.out.println("Enter the number1 and number2 => ");
+                int a = sc.nextInt();
+                int b = sc.nextInt();
+
+                int c = a - b;
+
+                System.out.println("the Subtraction of " + a + " and " + b + " = " + c);
+        }
+}
+
+public class Main {
+
+        public static void main(String[] args) {
+
+                new a();
+                new b();
+                new c();
+
+        }
+}
+
+
+------------------------------------------------------------------------------------------------------------
+
+Answer 7=>>
+
+import java.util.*;
+
+class a {
+        a() {
+                Scanner sc = new Scanner(System.in);
+                System.out.println("Enter the number => ");
+                int a = sc.nextInt();
+                int temp = a;
+
+                int rem, sum = 0;
+                while (a > 0) {
+
+                        rem = a % 10;
+                        sum = sum * 10 + rem;
+                        a = a / 10;
+
+                }
+
+                if (sum == temp) {
+                        System.out.println(" the number is pallanderom...");
+
+                } else {
+                        System.out.println(" the number is not a pallandrom....");
+                }
+
+        }
+}
+        public class Main {
+
+                void show() {
+                        Scanner sc = new Scanner(System.in);
+                        System.out.println("Enter the number1 and number2 => ");
+                        int a = sc.nextInt();
+                        int b = sc.nextInt();
+
+                        int c = a + b;
+
+                        System.out.println("the Addition of " + a + " and " + b + " = " + c);
+                }
+
+                void show1(int a, int b) {
+
+                        int c;
+
+                        c = a;
+                        a = b;
+                        b = c;
+
+                        System.out.println("After the swaped value of a is " + a);
+                        System.out.println("After the swaped value of b is " + b);
+
+                }
+
+                short show2(short sh) {
+
+                        System.out.print("the number is " + sh);
+
+                        return sh;
+
+                }
+
+                double show3(double d) {
+
+                        System.out.print("the number is " + d);
+
+                        return d;
+
+                }
+
+                public static void main(String[] args) {
+
+                        Main k = new Main();
+                        Scanner sc = new Scanner(System.in);
+                        System.out.println(
+                                        "Which process do u want swap , Addition, pallindrome , Short number , Double number  => ");
+                        String s = sc.next();
+                        if (s.equals("swap")) {
+
+                                int a = sc.nextInt();
+                                int b = sc.nextInt();
+
+                                k.show1(a, b);
+
+                        } else if (s.equals("Addition")) {
+
+                                k.show();
+                        } else if (s.equals("Short")) {
+                                short sh = sc.nextShort();
+                                k.show2(sh);
+                        } else if (s.equals("Double")) {
+                                double d = sc.nextDouble();
+                                k.show3(d);
+                        } else if (s.equals("pallindrome")) {
+                                new a();
+                        }else {
+                                System.out.println("Invalid input!!!!!!");
+                        }
+
+                }
+
+        }
+
+
+
+-----------------------------------------------------------------------------------------------------------
+
+Answer 8=>>
+
+import java.util.*;
+
+class a {
+
+        Scanner sc = new Scanner(System.in);
+
+        void swap() {
+                System.out.println("Enter the number1 =");
+                int n1 = sc.nextInt();
+
+                System.out.println("Enter the number2 =");
+                int n2 = sc.nextInt();
+
+                int c;
+
+                c = n1;
+                n1 = n2;
+                n2 = c;
+
+                System.out.println("After the swaped value of number1 = " + n1);
+                System.out.println("After the swaped value of number2 = " + n2);
+        }
+
+        void arm() {
+                System.out.println("Enter the number =");
+                int a = sc.nextInt();
+
+                int rem, sum = 0;
+                int temp = a;
+                while (a > 0) {
+
+                        rem = a % 10;
+                        sum = sum + rem * rem * rem;
+                        a = a / 10;
+
+                }
+                if (sum == temp) {
+                        System.out.println("number is armstrong...");
+                } else {
+                        System.out.println("the number is not an armstrong...");
+                }
+
+        }
+
+        void facto() {
+
+        }
+
+        void rever() {
+                System.out.println("Enter the number....");
+                int a = sc.nextInt();
+
+                int rem, sum = 0;
+                int temp = a;
+                while (a > 0) {
+
+                        rem = a % 10;
+                        sum = sum * 10 + rem;
+                        a = a / 10;
+
+                }
+
+                System.out.println("the reversed number of " + temp + "is = " + sum);
+        }
+
+        void pallin() {
+                System.out.println("Enter the number=");
+                int a = sc.nextInt();
+
+                int temp = a;
+                int rem, sum = 0;
+
+                while (a > 0) {
+
+                        rem = a % 10;
+                        sum = sum * 10 + rem;
+                        a = a / 10;
+
+                }
+                if (sum == temp) {
+                        System.out.println("The number is pallindrom...");
+                } else {
+                        System.out.println("the number is not pallindrom...");
+                }
+        }
+
+        void neon() {
+                System.out.println("Enter the number = ");
+                int a = sc.nextInt();
+
+                int sq = a * a;
+                int rem, sum = 0;
+
+                while (a > 0) {
+
+                        rem = a % 10;
+
+                }
+
+        }
+
+        void fibona() {
+
+        }
+
+        void e_o() {
+                System.out.println("enter the number :");
+                int a = sc.nextInt();
+
+                if (a % 2 == 0) {
+                        System.out.println("the number " + a + " is evean number!!");
+                } else {
+                        System.out.println("the number is not even number it is odd number!!");
+                }
+
+        }
+
+        void maximum() {
+                System.out.println("Enter the number1 = ");
+                int a = sc.nextInt();
+
+                System.out.println("enter the number2 = ");
+                int b = sc.nextInt();
+
+                System.out.println("Enter the number 3 = ");
+                int c = sc.nextInt();
+
+                if (a > b && a > c) {
+                        System.out.println("A = " + a + " is greater then B and C");
+
+                } else if (b > a && b > c) {
+                        System.out.println("b = " + b + " is greater then A and C");
+                } else {
+                        System.out.println("C = " + c + " is grester then A and B ");
+                }
+        }
+
+        void perfect() {
+
+        }
+
+        void voter() {
+                System.out.println("Enter the age =");
+                int age = sc.nextInt();
+
+                if (age >= 18) {
+                        System.out.println("U are able to vote this time ");
+
+                } else {
+                        System.out.println("u are not able to vote ");
+                }
+        }
+
+        void m_f() {
+                System.out.println("Enter the gender = ");
+                char a = sc.next().charAt(0);
+
+                if (a == 'm') {
+                        System.out.println("U are male!!!!!");
+                } else {
+                        System.out.println("U are female!!!!");
+                }
+        }
+
+        void vovel_conso() {
+                System.out.println("Enter any charecture = ");
+                char a = sc.next().charAt(0);
+
+                if (a == 'a' || a == 'e' || a == 'i' || a == 'o' || a == 'u') {
+                        System.out.println("U entered a vovle");
+
+                } else {
+                        System.out.println("U enter a consonentes");
+                }
+
+        }
+
+        void count() {
+
+        }
+}
+
+public class Main {
+
+        public static void main(String[] args) {
+                a k = new a();
+                Scanner sc = new Scanner(System.in);
+                System.out.println(
+                                "Enter which process do u want swap , armstroong , factorial , reverse , pallindrome , neon , fibonacci , even_odd , Maximum , Perfect_number , voter_id , male_female , vovel_conso , count = ");
+                String s = sc.nextLine();
+                if (s.equals("Swap")) {
+                        k.swap();
+                } else if (s.equals("armstroong")) {
+                        k.arm();
+                } else if (s.equals("factorial")) {
+                        k.facto();
+                } else if (s.equals("reverse")) {
+                        k.rever();
+                } else if (s.equals("Pallindrome")) {
+                        k.pallin();
+                } else if (s.equals("neon")) {
+                        k.neon();
+                } else if (s.equals("fibonacci")) {
+                        k.fibona();
+                } else if (s.equals("even_odd")) {
+                        k.e_o();
+                } else if (s.equals("Maximum")) {
+                        k.maximum();
+                } else if (s.equals("perfect_number")) {
+                        k.perfect();
+                } else if (s.equals("voter_id")) {
+                        k.voter();
+                } else if (s.equals("male_female")) {
+                        k.m_f();
+                } else if (s.equals("vovel_conso")) {
+                        k.vovel_conso();
+                } else if (s.equals("count")) {
+                        k.count();
+                } else {
+                        System.out.println("Invalid input...");
+                }
+
+        }
+
+}
+s
+-----------------------------------------------------------------------------------------------------------------------------
