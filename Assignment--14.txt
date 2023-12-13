@@ -1,0 +1,182 @@
+Answer 1=>>
+
+import java.util.*;
+
+class Parent {
+        void show() {
+                System.out.println("Hello World!!!");
+        }
+
+}
+
+class Child extends Parent {
+
+        void show1() {
+                System.out.println("How are u?");
+        }
+
+}
+
+public class Main {
+
+        public static void main(String[] args) {
+
+                Child k = new Child();
+
+                k.show();
+                k.show1();
+
+        }
+}
+
+----------------------------------------------------------------------------------------------------------------------------
+
+Answer 2->>
+
+import java.util.*;
+
+class Dog {
+        Dog() {
+                Scanner sc = new Scanner(System.in);
+
+                System.out.println("Enter the number1 and number2 = ");
+                int a = sc.nextInt();
+                int b = sc.nextInt();
+                int add = a + b;
+
+                System.out.println("the addition is " + add);
+
+        }
+
+        void eat() {
+
+                System.out.println("Dog = Eating every time!!!");
+
+        }
+
+}
+
+class BabyDog extends Dog {
+
+        BabyDog() {
+                Scanner sc = new Scanner(System.in);
+
+                System.out.println("Enter the number1 and number2 = ");
+                int a = sc.nextInt();
+                int b = sc.nextInt();
+                int mul = a * b;
+
+                System.out.println("the multiplication is " + mul);
+        }
+
+        void bark() {
+                System.out.println("BabyDog = Eating too much!!!");
+        }
+}
+
+public class Main {
+
+        public static void main(String[] args) {
+
+                BabyDog k = new BabyDog();
+
+                k.eat();
+                k.bark();
+
+        }
+}
+
+--------------------------------------------------------------------------------------------------------------------------
+
+Answer 3=>>>
+
+import java.util.*;
+
+class A {
+        A() {
+                System.out.println("Hello Everyone!!!");
+        }
+
+        void add() {
+                Scanner sc = new Scanner(System.in);
+
+                System.out.println("Enter the number1 and number2 to addition = ");
+                int a = sc.nextInt();
+                int b = sc.nextInt();
+                int add = a + b;
+
+                System.out.println("the addition is " + add);
+        }
+
+        void mul() {
+                Scanner sc = new Scanner(System.in);
+
+                System.out.println("Enter the number1 and number2 for Multiply = ");
+                int a = sc.nextInt();
+                int b = sc.nextInt();
+                int mull = a * b;
+
+                System.out.println("the Multiplication is " + mull);
+
+        }
+
+}
+
+class B extends A {
+        B() {
+                System.out.println("Hii evryone!!!");
+        }
+
+        void div() {
+                Scanner sc = new Scanner(System.in);
+
+                System.out.println("Enter the number1 and number2 for division = ");
+                int a = sc.nextInt();
+                int b = sc.nextInt();
+                int divi = a / b;
+
+                System.out.println("the division is " + divi);
+
+        }
+
+        void mod() {
+                Scanner sc = new Scanner(System.in);
+
+                System.out.println("Enter the number1 and number2 for modulor = ");
+                int a = sc.nextInt();
+                int b = sc.nextInt();
+                int modu = a % b;
+
+                System.out.println("the Modulation is " + modu);
+        }
+
+        void sub() {
+                Scanner sc = new Scanner(System.in);
+
+                System.out.println("Enter the number1 and number2 Subtraction = ");
+                int a = sc.nextInt();
+                int b = sc.nextInt();
+                int sub = a - b;
+
+                System.out.println("the Subtraction is " + sub);
+
+        }
+
+}
+
+public class Main {
+
+        public static void main(String[] args) {
+
+                B k = new B();
+
+                k.add();
+                k.mul();
+                k.div();
+                k.mod();
+                k.sub();
+
+        }
+}
+
+=================================================================================================================================
