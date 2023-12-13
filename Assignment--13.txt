@@ -1,0 +1,212 @@
+Answer 1=>>
+
+import java.util.*;
+
+class a {
+        a(int a, int b) {
+
+                int c = a + b;
+
+                System.out.println("the sum of " + a + " and " + b + " = " + c);
+        }
+}
+
+public class Main {
+
+        public static void main(String[] args) {
+
+                Scanner sc = new Scanner(System.in);
+
+                System.out.println("Enter number 1 and number 2 : ");
+                int a = sc.nextInt();
+                int b = sc.nextInt();
+
+                new a(a, b);
+
+        }
+}
+
+
+
+---------------------------------------------------------------------------------------------------------
+
+Answer 2=>>
+
+import java.util.*;
+
+class a {
+        a(int a, int b) {
+
+                int c = a - b;
+
+                System.out.println("the subtraction of " + a + " and " + b + " = " + c);
+        }
+}
+
+public class Main {
+
+        public static void main(String[] args) {
+
+                Scanner sc = new Scanner(System.in);
+
+                System.out.println("Enter number 1 and number 2 : ");
+                int a = sc.nextInt();
+                int b = sc.nextInt();
+
+                new a(a, b);
+
+        }
+}
+
+---------------------------------------------------------------------------------------------------------------------------
+
+Answer 3=>>
+
+import java.util.*;
+
+class a {
+        a(int a, int b) {
+
+                int c = a * b;
+
+                System.out.println("the multiplication of " + a + " and " + b + " = " + c);
+        }
+}
+
+public class Main {
+
+        public static void main(String[] args) {
+
+                Scanner sc = new Scanner(System.in);
+
+                System.out.println("Enter number 1 and number 2 : ");
+                int a = sc.nextInt();
+                int b = sc.nextInt();
+
+                new a(a, b);
+
+        }
+}
+
+
+---------------------------------------------------------------------------------------------------------
+
+Answer 4=>>
+
+import java.util.*;
+
+class a {
+        a(int a, int b) {
+
+                int c = a / b;
+
+                System.out.println("the division of " + a + " and " + b + " = " + c);
+        }
+}
+
+public class Main {
+
+        public static void main(String[] args) {
+
+                Scanner sc = new Scanner(System.in);
+
+                System.out.println("Enter number 1 and number 2 : ");
+                int a = sc.nextInt();
+                int b = sc.nextInt();
+
+                new a(a, b);
+
+        }
+}
+
+---------------------------------------------------------------------------------------------------------------------------------
+
+Answer 5=>>
+
+import java.util.*;
+
+class a {
+        int a;
+        int b;
+
+        a(int a, int b) {
+                this.a = a;
+                this.b = b;
+                System.out.println(a + " " + b);
+
+        }
+
+        void show() {
+                Scanner sc = new Scanner(System.in);
+
+                System.out.println("Enter number 1 and number 2 : ");
+                int n1 = sc.nextInt();
+                int n2 = sc.nextInt();
+                int add = n1 + n2;
+
+                System.out.println("the addition is " + add);
+        }
+
+        int show1(int n1, int n2) {
+
+                int add = n1 + n2;
+
+                System.out.println("the addition is " + add);
+
+                return add;
+        }
+
+        void show2(int n1, int n2) {
+                int add = n1 + n2;
+
+                System.out.println("the addition is " + add);
+
+        }
+
+        int show3() {
+                Scanner sc = new Scanner(System.in);
+
+                System.out.println("Enter number 1 and number 2 : ");
+                int n1 = sc.nextInt();
+                int n2 = sc.nextInt();
+                int add = n1 + n2;
+
+                System.out.println("the addition is " + add);
+
+                return add;
+
+        }
+
+}
+
+public class Main {
+
+        public static void main(String[] args) {
+
+                Scanner sc = new Scanner(System.in);
+
+                a k = new a(4, 5);
+                System.out.println("which methord do u want to Display type Nr_Na , Nr_a , r_a ,r_Na");
+                String s = sc.next();
+                if (s.equals("Nr_Na")) {
+                        k.show();
+                } else if (s.equals("r_a")) {
+                        System.out.println("Enter number 1 and number 2 : ");
+                        int n1 = sc.nextInt();
+                        int n2 = sc.nextInt();
+                        k.show1(n1, n2);
+                } else if (s.equals("Nr_a")) {
+                        System.out.println("Enter number 1 and number 2 : ");
+                        int n1 = sc.nextInt();
+                        int n2 = sc.nextInt();
+                        k.show2(n1, n2);
+                } else if (s.equals("r_Na")) {
+                        k.show3();
+                } else {
+                        System.out.println("Invalid move!!");
+                }
+
+        }
+}
+
+===========================================================================================================================
