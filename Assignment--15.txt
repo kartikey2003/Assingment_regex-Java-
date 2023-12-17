@@ -1,0 +1,468 @@
+Answer 1=>>
+
+import java.util.*;
+
+class A {
+        int M1() {
+
+                int a = 1;
+                System.out.println(a);
+                return a;
+
+        }
+
+        short M2() {
+
+                short a = 2;
+                System.out.println(a);
+                return a;
+        }
+
+        byte M3() {
+
+                byte a = 3;
+                System.out.println(a);
+                return a;
+        }
+
+        boolean M4() {
+
+                boolean a = true;
+                System.out.println(a);
+                return a;
+        }
+
+}
+
+class B extends A {
+
+        String M5() {
+
+                String a = "Hello world!!!";
+                System.out.println(a);
+                return a;
+        }
+
+        Double M6() {
+                Double a = 4.0000;
+                System.out.println(a);
+
+                return a;
+        }
+
+        long M7() {
+                long a = 40000;
+                System.out.println(a);
+
+                return a;
+        }
+
+        float M8() {
+                float a = 5.1f;
+                System.out.println(a);
+
+                return a;
+        }
+
+        char M9() {
+                char a = 'k';
+                System.out.println(a);
+
+                return a;
+        }
+
+}
+
+public class Main {
+
+        public static void main(String[] args) {
+                B k = new B();
+                k.M1();
+                k.M2();
+                k.M3();
+                k.M4();
+                k.M5();
+                k.M6();
+                k.M7();
+                k.M8();
+                k.M9();
+
+        }
+}
+
+---------------------------------------------------------------------------------------------------------------------------
+
+Answer 2=>>
+
+import java.util.*;
+
+class A {
+        int M1() {
+
+                int a = 1;
+                System.out.println(a);
+                return a;
+
+        }
+
+        short M2() {
+
+                short a = 2;
+                System.out.println(a);
+                return a;
+        }
+
+        byte M3() {
+
+                byte a = 3;
+                System.out.println(a);
+                return a;
+        }
+
+}
+
+class B extends A {
+
+        boolean M4() {
+
+                boolean a = true;
+                System.out.println(a);
+                return a;
+        }
+
+        String M5() {
+
+                String a = "Hello world!!!";
+                System.out.println(a);
+                return a;
+        }
+
+        Double M6() {
+                Double a = 4.0000;
+                System.out.println(a);
+
+                return a;
+        }
+
+}
+
+class C extends B {
+        long M7() {
+                long a = 40000;
+                System.out.println(a);
+
+                return a;
+        }
+
+        float M8() {
+                float a = 5.1f;
+                System.out.println(a);
+
+                return a;
+        }
+
+        char M9() {
+                char a = 'k';
+                System.out.println(a);
+
+                return a;
+        }
+}
+
+public class Main {
+
+        public static void main(String[] args) {
+                B k = new B();
+                k.M1();
+                k.M2();
+                k.M3();
+                C h = new C();
+                h.M4();
+                h.M5();
+                h.M6();
+                h.M7();
+                h.M8();
+                h.M9();
+
+        }
+}
+
+---------------------------------------------------------------------------------------------------------
+
+Answer 3=>>
+
+import java.util.*;
+
+class A {
+        int M1() {
+
+                int a = 1;
+                System.out.println(a);
+                return a;
+
+        }
+
+        short M2() {
+
+                short a = 2;
+                System.out.println(a);
+                return a;
+        }
+
+        byte M3() {
+
+                byte a = 3;
+                System.out.println(a);
+                return a;
+        }
+
+}
+
+class B extends A {
+
+        boolean M4() {
+
+                boolean a = true;
+                System.out.println(a);
+                return a;
+        }
+
+        String M5() {
+
+                String a = "Hello world!!!";
+                System.out.println(a);
+                return a;
+        }
+
+        Double M6() {
+                Double a = 4.0000;
+                System.out.println(a);
+
+                return a;
+        }
+
+}
+
+class C extends A {
+        long M7() {
+                long a = 40000;
+                System.out.println(a);
+
+                return a;
+        }
+
+        float M8() {
+                float a = 5.1f;
+                System.out.println(a);
+
+                return a;
+        }
+
+        char M9() {
+                char a = 'k';
+                System.out.println(a);
+
+                return a;
+        }
+}
+
+public class Main {
+
+        public static void main(String[] args) {
+                B k = new B();
+                k.M1();
+                k.M2();
+                k.M3();
+
+                k.M4();
+                k.M5();
+                k.M6();
+
+                System.out.println("***********");
+
+                C h = new C();
+                h.M1();
+                h.M2();
+                h.M3();
+
+                h.M7();
+                h.M8();
+                h.M9();
+
+        }
+}
+
+---------------------------------------------------------------------------------------------------------------------------
+
+Answer 4=>
+
+import java.util.*;
+
+class A {
+        A show() {
+                System.out.println("Hello bro!!");
+
+                return this;
+        }
+
+}
+
+class B extends A {
+        B show2() {
+                System.out.println("Bye bro!!!");
+
+                return this;
+        }
+
+}
+
+public class Main {
+
+        public static void main(String[] args) {
+                B k = new B();
+                k.show();
+                k.show2();
+
+        }
+}
+
+---------------------------------------------------------------------------------------------------------------------------
+
+Answer 6=>>
+
+import java.util.*;
+
+class A {
+        A show() {
+                System.out.println("Hello bro!!");
+
+                return this;
+        }
+
+}
+
+class B extends A {
+        B show2() {
+                System.out.println("how are u bro!!!");
+
+                return this;
+        }
+
+}
+
+class C extends B {
+        C show3() {
+                System.out.println("Bye bro!!!");
+                return this;
+        }
+}
+
+public class Main {
+
+        public static void main(String[] args) {
+                C k = new C();
+                k.show();
+                k.show2();
+                k.show3();
+
+        }
+}
+
+-------------------------------------------------------------------------------------------------------------------------
+
+Answer 7=>>
+
+import java.util.*;
+
+class A {
+        A show() {
+                System.out.println("Hello bro!!");
+
+                return this;
+        }
+
+}
+
+class B extends A {
+        B show2() {
+                System.out.println("how are u bro!!!");
+
+                return this;
+        }
+
+}
+
+class C extends A {
+        C show3() {
+                System.out.println("Bye bro!!!");
+                return this;
+        }
+}
+
+public class Main {
+
+        public static void main(String[] args) {
+
+                B h = new B();
+                h.show();
+                h.show2();
+                System.out.println("*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*");
+                C k = new C();
+                k.show();
+                k.show3();
+
+        }
+}
+
+------------------------------------------------------------------------------------------------------------------------------
+
+Answer 8=>>
+
+----------------------------------------------
+Answer 9=>>
+
+import java.util.*;
+
+class A {
+        int show(int a) {
+                System.out.println(a);
+
+                return a;
+        }
+
+}
+
+class B extends A {
+    float show2(float b) {
+                System.out.println(b);
+
+                return b;
+        }
+
+}
+
+class C extends A {
+        char show3(char c) {
+                System.out.println(c);
+                return c;
+        }
+}
+
+public class Main {
+
+        public static void main(String[] args) {
+
+                B h = new B();
+                h.show(4);
+                h.show2(2.4f);
+                System.out.println("*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*");
+                C k = new C();
+                k.show(4);
+                k.show3('f');
+
+        }
+}
+
+---------------------------------------------------------------------------------------------------------------------------------------------------
+Answer 10=>>
+
