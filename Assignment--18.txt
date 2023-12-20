@@ -1,0 +1,103 @@
+Answer 18=>>
+
+import java.util.Scanner;
+static class A {
+    class B {
+        void show(){
+            System.out.println("hiiii");
+        }
+    }
+}
+public class Main {
+    public static void main(String[] args) {
+        A k = new A();
+        B p = k.new B();
+        p.show();
+    }
+ }
+
+//ERROR
+------------------------------------------------------------------------------------------------------------------
+Answer 2=>>
+
+import java.util.Scanner;
+static class A {
+    class B {
+        static void show(){
+            System.out.println("hiiii");
+        }
+    }
+}
+public class Main {
+    public static void main(String[] args) {
+        A k = new A();
+        B p = k.new B();
+        p.show();
+    }
+ }
+
+//ERROR
+---------------------------------------------------------------------------------------------------------------------
+
+Answer 3=>>
+
+import java.util.Scanner;
+ class A {
+    static class B {
+        static void show(){
+            System.out.println("hiiii");
+        }
+    }
+}
+public class Main {
+    public static void main(String[] args) {
+        A.B.show();
+    }
+ }
+
+------------------------------------------------------------------------------------------------------------------------
+
+Answer 4=>>
+
+import java.util.Scanner;
+static class A {
+    static class B {
+        static void show(){
+            System.out.println("hiiii");
+        }
+    }
+}
+public class Main {
+    public static void main(String[] args) {
+        A.B.show();
+    }
+ }
+
+//ERROR 
+---------------------------------------------------------------------------------------------------------------------------
+
+Answer 5=>>>
+
+public class Main {
+    static class A {
+
+        static void show() {
+            System.out.println("this is classs A");
+        }
+
+        class B {
+            void show1() {
+                System.out.println("class B");
+            }
+        }
+    }
+
+    public static void main(String[] args) {
+        A.show();
+        A.B.show1();
+
+    }
+}
+
+//ONLY CLASS A ka methord hehee run kre ga
+//or CLASS B ERROR de ga 
