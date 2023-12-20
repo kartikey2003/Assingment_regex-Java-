@@ -1,0 +1,390 @@
+Answer 1=>>
+
+import java.util.*;
+
+abstract class A {
+    abstract void methord();
+
+    abstract void methord1(int a , int b);
+
+    abstract int methord2();
+
+    abstract int methord3(int a , int b);
+
+}
+
+class B extends A{
+    void methord(){
+        System.out.println("this is abstract class kaekk abstract methord....");
+    }
+
+    void methord1(int a , int b){
+        int c = a+b;
+        System.out.println("the sum is = " + c);
+    }
+
+    int methord2(){
+        int a = 10;
+        int b =20;
+       int c = a-b;
+        System.out.println("a - b = " + c);
+
+        return c;
+
+    }
+
+    int methord3(int a , int b){
+        int c = a+b;
+        System.out.println("a + b = " + c);
+
+        return c;
+    }
+
+   
+
+}
+
+public class Main {
+    public static void main(String[] args) {
+
+        B k = new B();
+        k.methord();
+        k.methord1(10 , 20);
+        k.methord2();
+        k.methord3(10,20 );
+    }
+}
+
+--------------------------------------------------------------------------------------------------------
+
+Answer 2=>>
+
+import java.util.*;
+
+abstract class A {
+    abstract short method1();
+
+    abstract int method2(int a);
+
+    abstract long method3(long a);
+
+    abstract String method4(String a);
+
+}
+
+class B extends A {
+    short method1() {
+        short a = 2;
+        System.out.println(a);
+        return a;
+    }
+
+    int method2(int a) {
+        System.out.println(a);
+
+        return a;
+
+    }
+
+    long method3(long a) {
+        long b = 44569887;
+        long c = a + b;
+        System.out.println(c);
+
+        return c;
+    }
+
+    String method4(String a) {
+        System.out.println(a);
+
+        return a;
+
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+
+        B k = new B();
+        k.method1();
+        k.method2(56);
+        k.method3(25896547);
+        k.method4("bye bro!!!");
+
+    }
+}
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+Answer 3=>>
+
+import java.util.*;
+
+abstract class A {
+    abstract double method1();
+
+    abstract int method2(int a);
+
+    abstract char method3(char a);
+
+    abstract boolean method4(boolean a);
+
+}
+
+class B extends A {
+    double method1() {
+        double a = 2.5f;
+        System.out.println(a);
+        return a;
+    }
+
+    int method2(int a) {
+        System.out.println(a);
+
+        return a;
+
+    }
+
+    char method3(char a) {
+
+        System.out.println(a);
+
+        return a;
+    }
+
+    boolean method4(boolean a) {
+        System.out.println(a);
+
+        return a;
+
+    }
+
+    float method5(float a) {
+        System.out.println(a);
+        return a;
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+
+        B k = new B();
+        k.method1();
+        k.method2(56);
+        k.method3('k');
+        k.method4(true);
+        k.method5(2.4f);
+
+    }
+}
+
+-------------------------------------------------------------------------------------------------------------------------
+
+Answer 4=>>
+
+import java.util.*;
+
+class A extends B {
+
+    short method1(short a) {
+        System.out.println(a);
+        return a;
+
+    }
+
+    byte method2(byte a) {
+        System.out.println(a);
+        return a;
+
+    }
+
+    int method3(int a) {
+        System.out.println(a);
+        return a;
+
+    }
+
+    double method4(double a) {
+        System.out.println(a);
+        return a;
+
+    }
+
+    float method5(float a) {
+        System.out.println(a);
+        return a;
+
+    }
+
+    char method6(char a) {
+        System.out.println(a);
+        return a;
+
+    }
+
+}
+
+abstract class B {
+    abstract short method1(short a);
+
+    abstract byte method2(byte a);
+
+    abstract int method3(int a);
+
+}
+
+class C extends B {
+
+    short method1(short a) {
+        System.out.println(a);
+        return a;
+
+    }
+
+    byte method2(byte a) {
+        System.out.println(a);
+        return a;
+
+    }
+
+    int method3(int a) {
+        System.out.println(a);
+        return a;
+
+    }
+
+    long method7(long a) {
+        System.out.println(a);
+        return a;
+
+    }
+
+    String method8(String a) {
+        System.out.println(a);
+        return a;
+
+    }
+
+}
+
+class D extends C {
+    double method9(double a) {
+        System.out.println(a);
+        return a;
+
+    }
+
+    long method10(long a) {
+        System.out.println(a);
+        return a;
+
+    }
+
+}
+
+public class Main {
+
+    void show() {
+        System.out.println("hloooo!!!");
+    }
+
+    void show1() {
+        System.out.println("bye!!!!!");
+    }
+
+    public static void main(String[] args) {
+        System.out.println("this is main class :");
+        Main m = new Main();
+        m.show();
+        m.show1();
+        System.out.println("this is D or C class :");
+        D k = new D();
+        k.method1(2);
+        k.method2(1);
+        k.method3(2);
+        k.method7(14569);
+        k.method8("Kartikey Sharma");
+        k.method9(258.852f);
+        k.method10(96541);
+
+        System.out.println("this is A class :");
+        A p = new A();
+        p.method1(345);
+        p.method2(0);
+        p.method3(0);
+        p.method4(45.25f);
+        p.method5(4.5f);
+        p.method6('k');
+
+    }
+}
+--------------------------------------------------------------------------------------------
+
+Answer 7 =>>
+
+import java.util.Scanner;
+
+abstract class A {
+    abstract void prime();
+}
+
+class B extends A {
+    void prime() {
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+
+        if (a % a == 0) {
+            System.out.println("this is prime number ");
+        } else {
+            System.out.println("this is not a prime number.....");
+        }
+    }
+}
+
+public class Main {
+
+    public static void main(String[] args) {
+        B k = new B();
+        k.prime();
+    }
+}
+
+-------------------------------------------------------------------------------------------------------------------------
+
+Answer 8 =>>
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter the starting point: ");
+        int start = scanner.nextInt();
+
+      
+        System.out.print("Enter the ending point: ");
+        int ending = scanner.nextInt();
+        //int result;
+
+        for (int i = ending ; i > start ; i--) {
+
+            if (i%2==0) {
+                 System.out.println(i);
+            } else if (i%2!=0) {
+                  System.out.println(i);
+            } 
+           
+        }
+        // System.out.println("Result: " + result);
+
+
+        
+
+    }
+}
+
+------------------------------------------------------------------------------
+
+Answer 9 =>>
+
